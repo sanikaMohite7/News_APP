@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📰 News Explorer</h1>
+
+    <!-- Search & Category Controls -->
+    <div class="controls">
+      <div class="search-bar">
+        <input type="text" id="search-input" placeholder="Search news...">
+        <button onclick="searchNews()">Search</button>
+      </div>
+
+      <div class="category-bar">
+        <label for="category">Category:</label>
+        <select id="category" onchange="filterByCategory()">
+          <option value="general">General</option>
+          <option value="business">Business</option>
+          <option value="technology">Technology</option>
+          <option value="sports">Sports</option>
+          <option value="health">Health</option>
+          <option value="science">Science</option>
+          <option value="entertainment">Entertainment</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="news-container" class="news-grid"></div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made by <strong>Sanika Mohite</strong></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
